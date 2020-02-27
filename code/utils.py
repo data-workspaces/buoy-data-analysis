@@ -106,10 +106,9 @@ def plot_anomaly_graph(buoyno, temptype, anomalies):
         print("Unable to fit a line")
         first_year = yearly_means.index[0].year
         last_year = yearly_means.index[-1].year
-    
-        print("Creating a line just using the endpoint years (%s, %s)" %
-              (first_year, last_year))
-        (slope, intercept) = np.polyfit([0, last_year-first_year], [yearly_means[0], yearly_means[-1]], 1)
+        print("Creating a line just using two years on each endpoint (%s and %s, %s and %s)" %
+              (first_year, first_year+1, last_year-1, last_year))
+        (slope, intercept) = np.polyfit([0, last_year-first_year], [yearly_means[0:2].mean(), yearly_means[-2:].mean()], 1)
         fit_type = 'endpoint fit'
     values = [i*slope+intercept for i in range(len(yearly_means.index))]
     linear_series = pd.Series(data=values, index=yearly_means.index, name='linear fit')
