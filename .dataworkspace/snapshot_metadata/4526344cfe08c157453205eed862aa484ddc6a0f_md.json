@@ -12,5 +12,10 @@
     "intermediate-data": "5c61d26d0e50f3e00aa1f75563e76d34618d067c",
     "results": "d9538fd389745565483e09642817060c0b338ad9",
     "data": "d9538fd389745565483e09642817060c0b338ad9"
+  },
+  "metrics": {
+    "air_slope": 0.268,
+    "water_slope": 0.11,
+    "units": "degrees C per decade"
   }
 }

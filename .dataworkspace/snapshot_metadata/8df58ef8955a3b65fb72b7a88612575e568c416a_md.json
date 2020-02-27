@@ -7,6 +7,11 @@
   "relative_destination_path": "snapshots/mojave-buoy-46026-final",
   "hostname": "mojave",
   "timestamp": "2019-05-12T11:24:08.638643",
+  "metrics": {
+    "air_slope": -0.016,
+    "water_slope": 0.009,
+    "units": "degrees C per decade"
+  },
   "restore_hashes": {
     "code": "5610d41ee649c423ec56bd05a58f0f17efca3c19",
     "intermediate-data": "5610d41ee649c423ec56bd05a58f0f17efca3c19",
