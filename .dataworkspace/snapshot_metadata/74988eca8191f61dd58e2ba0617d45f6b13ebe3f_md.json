@@ -1,0 +1,21 @@
+{
+  "hash": "74988eca8191f61dd58e2ba0617d45f6b13ebe3f",
+  "tags": [
+    "buoy-44014-better-slope"
+  ],
+  "message": "Improved slope fitting for endpoints",
+  "hostname": "jf-laptop",
+  "timestamp": "2020-02-27T12:13:14.385853",
+  "relative_destination_path": "snapshots/jf-laptop-buoy-44014-better-slope",
+  "restore_hashes": {
+    "code": "795042dbffaf8f805391aa8abe03b6b52b7b92e9",
+    "intermediate-data": "77b4db65deed2c7524c2e2e07d73e12394442dd8",
+    "results": "77b4db65deed2c7524c2e2e07d73e12394442dd8",
+    "data": "77b4db65deed2c7524c2e2e07d73e12394442dd8"
+  },
+  "metrics": {
+    "air_slope": 0.504,
+    "water_slope": 0.59,
+    "units": "degrees C per decade"
+  }
+}
