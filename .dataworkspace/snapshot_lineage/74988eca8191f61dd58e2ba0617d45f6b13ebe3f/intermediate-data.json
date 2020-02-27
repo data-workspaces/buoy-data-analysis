@@ -1,0 +1,54 @@
+{
+  "resource_name": "intermediate-data",
+  "lineages": [
+    {
+      "type": "step",
+      "step_name": "preprocess",
+      "start_time": "2020-02-27T11:40:07.512171",
+      "execution_time_seconds": 19.814664,
+      "parameters": {},
+      "input_resources": [
+        {
+          "resource_name": "data",
+          "subpath": "44014",
+          "certificate": {
+            "cert_type": "hash",
+            "hashval": "27f93441d30bd58bcaa9a33ebd6a591df4f175c3",
+            "comment": "Step preprocess at 2020-02-27 11:40:07.512171"
+          }
+        }
+      ],
+      "code_resources": [
+        {
+          "resource_name": "code",
+          "subpath": null,
+          "certificate": {
+            "cert_type": "hash",
+            "hashval": "39c5c2839edce2821d17d1536041b8a01ec347aa",
+            "comment": "Step preprocess at 2020-02-27 11:40:07.512171"
+          }
+        }
+      ],
+      "output_resources": [
+        {
+          "resource_name": "intermediate-data",
+          "subpath": "processed_44014.csv.gz",
+          "certificate": {
+            "cert_type": "hash",
+            "hashval": "d3e0c8be44851a033bc02b8810ced0d634f618f3",
+            "comment": "Step preprocess at 2020-02-27 11:40:07.512171"
+          }
+        }
+      ],
+      "command_line": [
+        "/Users/jfischer/anaconda3/envs/buoy-data-analysis/bin/python",
+        "../code/preprocess.py",
+        "44014"
+      ],
+      "run_from_directory": [
+        "data",
+        null
+      ]
+    }
+  ]
+}

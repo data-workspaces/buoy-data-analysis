@@ -1,0 +1,15 @@
+{
+  "resource_name": "data",
+  "lineages": [
+    {
+      "resource_name": "data",
+      "subpath": "44014",
+      "certificate": {
+        "cert_type": "hash",
+        "hashval": "27f93441d30bd58bcaa9a33ebd6a591df4f175c3",
+        "comment": "Step preprocess at 2020-02-27 11:40:07.512171"
+      },
+      "type": "source_data"
+    }
+  ]
+}
