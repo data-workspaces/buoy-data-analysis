@@ -104,8 +104,9 @@ def plot_anomaly_graph(buoyno, temptype, anomalies):
     if np.isnan(slope):
         # If we cannot infer a straight line, just connect the endpoints
         print("Unable to fit a line")
-        first_year = yearly_means.index[0]
-        last_year = yearly_means.index[-1]
+        first_year = yearly_means.index[0].year
+        last_year = yearly_means.index[-1].year
+    
         print("Creating a line just using the endpoint years (%s, %s)" %
               (first_year, last_year))
         (slope, intercept) = np.polyfit([0, last_year-first_year], [yearly_means[0], yearly_means[-1]], 1)
