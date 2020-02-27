@@ -10,9 +10,11 @@
 
 Installation
 ------------
-To set this up as a workspace, run:
+To set this up as a data workspace in its own [Conda](https://conda.io/en/latest/) environment, run:
 ```
-conda create -f environment.yml
-conda activate buoy-data-analysis
+pip install dataworkspaces
 dws clone git@github.com:data-workspaces/buoy-data-analysis.git
+cd buoy-data-analysis
+conda env create -f environment.yml
+conda activate buoy-data-analysis
 ```
