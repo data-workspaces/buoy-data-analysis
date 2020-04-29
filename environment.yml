@@ -6,4 +6,4 @@ dependencies:
   - pandas=1.0.*
   - pip=19.2.*
   - pip:
-    - dataworkspaces==1.2.*
+    - dataworkspaces==1.3.*
